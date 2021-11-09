@@ -80,7 +80,7 @@ describe('🔷Ejercicios Esenciales🔷', function() {
     });
   });
 
-  describe('suma(x, y)', function() {
+  describe('suma(xit, y)', function() {
     it('Deberia devolver la suma de los dos argumentos', function() {
       expect(suma(5, 5)).toBe(10);
       expect(suma(-1, 5)).toBe(4);
@@ -184,8 +184,8 @@ describe('🔷Ejercicios Esenciales🔷', function() {
     });
   });
 
-  describe('elevar(num, exponent)', function() {
-    it('Deberia devolver el numero elevado al exponente indicado', function() {
+  describe('elevar(num, exitponent)', function() {
+    it('Deberia devolver el numero elevado al exitponente indicado', function() {
       expect(elevar(2, 2)).toBe(4);
       expect(elevar(2, 3)).toBe(8);
       expect(elevar(0, 5)).toBe(0);
@@ -226,7 +226,7 @@ describe('🔷Ejercicios Esenciales🔷', function() {
   });
 
   describe('agregarSimboloExclamacion(str)', function() {
-    it('Deberia agregar un signo de exclamacion al final del string', function() {
+    it('Deberia agregar un signo de exitclamacion al final del string', function() {
       expect(agregarSimboloExclamacion('hello world')).toBe('hello world!');
       expect(agregarSimboloExclamacion('Soy Numen')).toBe('Soy Numen!');
     });
@@ -256,7 +256,7 @@ describe('🔷Ejercicios Esenciales🔷', function() {
 
 });
 
-describe('🥇¡Puntos Extra!🥇', function() {
+describe('🥇¡Puntos Exittra!🥇', function() {
   describe('obtenerAreaRectangulo(alto, ancho)', function() {
     it('Deberia retornar el area correcta del rectangulo', function() {
       expect(obtenerAreaRectangulo(2, 2)).toBe(4);
