@@ -24,8 +24,8 @@ const {
   redondearNumero,
   redondearHaciaArriba,
   numeroRandom,
-  esPositivo,
-  agregarSimboloExclamacion,
+  esPosxitivo,
+  agregarSimboloExitclamacion,
   combinarNombres,
   obtenerSaludo,
   obtenerAreaRectangulo,
@@ -226,7 +226,7 @@ describe('🔷Ejercicios Esenciales🔷', function() {
   });
 
   describe('agregarSimboloExclamacion(str)', function() {
-    it('Deberia agregar un signo de exitclamacion al final del string', function() {
+    it('Deberia agregar un signo de exclamacion al final del string', function() {
       expect(agregarSimboloExclamacion('hello world')).toBe('hello world!');
       expect(agregarSimboloExclamacion('Soy Numen')).toBe('Soy Numen!');
     });

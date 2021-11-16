@@ -5,7 +5,8 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
-  if (x>y) {return x;} else {return y;}
+  if (x>y) {return x;} 
+  else {return y;}
 }
 
 function mayoriaDeEdad(edad) {
@@ -114,17 +115,34 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
+    
+    if (num1==0 || num2==0 || num3==0) {return "Error";}
+    else if (num1<0 || num2<0 || num3<0) {return "Hay negativos";}
+    else if ((num1>num2 && num1>num3) && (num1>0)) {return "Número 1 es mayor y positivo";}
+    else if (num3>num2 && num3>num1) {return (num3+1);}
+    else {return false}
 }
 
 function esVerdadero(valor) {
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
+  if (valor==true) {return "Soy verdadero"}
+  else {return "Soy falso";}
 }
 
 function tieneTresDigitos(numero) {
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
+  
+  var contador=1;
+  
+  while (numero>=10){
+    contador ++;
+    numero=numero/10;
+  }
+  if (contador===3) {return true}
+  else {return false;}
 }
 
 // ---------- Puntos extra ----------
@@ -135,12 +153,27 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
+if (numero!=0 && numero!=1){
+var bandera=0;
+  for (var i=2;i<numero;i++){
+    if (numero%i===0) {bandera=1}
+  }
+}  
+if (bandera===0){return true} else {return false}
+
+
 }
 
 function tablaDelSeis() {
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
+
+  var vector=[10]
+  for (var i=0;i<=10;i++){
+    vector[i]= (6 * i);
+  }
+  return vector;
 }
 
 function doWhile(numero) {
